@@ -1,0 +1,119 @@
+.galleryList {
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(4, 1fr);
+  gap: 8px;
+}
+
+.title {
+  font-style: normal;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.tags {
+  font-style: normal;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+/*search input css*/
+
+.form-control.searchP {
+  width: 180px !important;
+}
+
+.searchCont {
+  position: relative;
+}
+
+.form-img {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.form-control.search {
+  width: 120px;
+  border: 1px solid #e4e4e4;
+  padding-right: 35px;
+  margin-right: 16px;
+  transition: width 0.4s ease-in-out 0s;
+}
+.form-control.search:focus {
+  border: 1px solid #85919E !important;
+}
+.search-field {
+  height: 36px;
+  width: 100%;
+}
+.mb-4 {
+  margin: 0px 15%;
+}
+input, .ng-select, input:focus-visible {
+  border: 1px solid #734060 !important;
+  border-radius: 2px !important;
+  outline: none !important;
+}
+h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 87%;
+}
+a.handCursor {
+  width: 13%;
+  padding: 4px;
+  border-radius: 25px;
+  text-align: center;
+    &:hover {
+      background-color: #ddd;
+    }
+}
+.card-img-top:hover {
+  opacity: .6;
+}
+@media(max-width:1079px) {
+  .galleryList {
+    grid-template: repeat(2, auto) / repeat(2, 1fr);
+  }
+  .form-control.search {
+    padding-right: 50px;
+    background-position: 97% !important;
+  }
+
+  .form-control.searchP {
+    width: 100% !important;
+  }
+
+  .form-img {
+    right: 3%;
+  }
+}
+
+@media only screen and (min-width: 1079px) {
+  .form-control.search:focus {
+    width: 200px !important;
+  }
+
+  .inActive.search:focus {
+    width: 220px !important;
+  }
+}
+
+@media only screen and (min-width:787px) and (max-width:1024px) and (orientation: landscape) {
+  .form-img {
+    right: 13%;
+  }
+}
+
+@media (max-width: 767px){
+  .galleryList {
+    grid-template: repeat(1, auto) / repeat(1, 1fr);
+  }
+}

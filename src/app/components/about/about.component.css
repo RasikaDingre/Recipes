@@ -1,0 +1,7 @@
+.about-para {
+    margin: 16px;
+    margin-top: 0px;
+    p {
+        color: #212529 !important;
+    }
+}

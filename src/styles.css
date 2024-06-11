@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 17px;
+    font-weight: 400;
+    max-width: 1150px;
+    margin: 0px auto !important;
+}
+
+.noDataFound {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 280px);
+    flex-direction: column;
+}
+
+.noDataFound img {
+    width: 150px;
+}
+
+body,
+a,
+p,
+h3,
+label {
+    color: #734060 !important;
+}
+
+.btn-primary {
+    background-color: #734060 !important;
+    color: #fff;
+    border: 0px;
+
+    &:hover {
+        background-color: #000 !important;
+    }
+}
+
+.form-control {
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border: 1px solid #734060;
+    }
+}
+
+button:focus:not(:focus-visible) {
+    box-shadow: none !important;
+}
+
+a {
+    &:hover {
+        color: #000 !important;
+        cursor: pointer;
+    }
+}
+
+.handCursor {
+    cursor: pointer;
+}
+
+/*ng select css start*/
+.ng-dropdown-panel .ng-dropdown-panel-items {
+    max-height: 220px !important;
+}
+
+.custom-select .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+    background-color: #ebf5ff !important;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-input>input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #2a292a;
+}
+
+.ng-select .ng-select-container,
+.date-pick {
+    border: 1px solid #85919E;
+    background: #ffffff;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #2a292a;
+    cursor: pointer;
+}
+
+.ng-value-container .ng-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #2a292a;
+}
+
+.ng-select .ng-arrow-wrapper {
+    background-image: url(assets/images/dropdown-icon.svg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    margin: 0 12px 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+.ng-select .ng-arrow-wrapper .ng-arrow{
+    display: none !important;
+}
+
+.ng-select.remove-ng-arrow-wrapper .ng-arrow-wrapper {
+    display: none;
+}
+
+.ng-select.ng-select-focused:not(.ng-select-opened)>.ng-select-container {
+    border-color: #85919E;
+    box-shadow: 0 0 0 0;
+}
+
+.custom-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2a292a;
+}
+
+.ng-select {
+    padding: 0;
+    border: none;
+}
+
+.ng-value-container .ng-input,
+.ng-value-container {
+    padding: 0 16px !important;
+}
+
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    background: #ffffff;
+    box-shadow: inset 0px -1px 0px #eaeaea;
+    height: 45px;
+    white-space: initial;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #2a292a;
+    padding: 14px 15px;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected .ng-option-label {
+    font-weight: 400;
+}
+
+.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+    background-color: #ffffff;
+    color: #2a292a
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-input>input {
+    height: auto;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-placeholder {
+    color: #85919E;
+    font-size: 14px;
+}
+
+.form-control.ng-touched.ng-invalid {
+    .ng-select-container input {
+        border: none !important;
+    }
+}
+
+.form-control.ng-touched.ng-invalid .ng-select-container {
+    border: 1px solid #d50000 !important;
+}
+
+.form-control.ng-touched.ng-invalid .ng-select-container input {
+    border: 1px solid #d50000 !important;
+}
+
+.ng-dropdown-panel {
+    z-index: 10 !important;
+}
+
+.ng-select-container {
+    z-index: 0 !important;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-input>input {
+    height: auto;
+}
+
+
+/*ng select css end*/

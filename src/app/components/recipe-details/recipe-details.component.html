@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div [routerLink]="'/home'"><h6 class="handCursor ps-4">Back</h6></div>
+<div id="card-container">
+    <div id="card-title">{{dataList?.name}}</div>
+    <div id="recipe-image" style="background-image:url('{{dataList?.image}}');"></div>
+    <div id="details">Prep time: <span class="detail-value">{{dataList?.prepTimeMinutes}} minutes</span> | Cook time:
+        <span class="detail-value">{{dataList?.cookTimeMinutes}}
+            minutes</span> | Rating: <span class="detail-value">{{dataList?.rating}}</span> | Serves: <span
+            class="detail-value">{{dataList?.servings}}</span> | Cuisine: <span
+            class="detail-value">{{dataList?.cuisine}}</span> | Difficulty: <span
+            class="detail-value">{{dataList?.difficulty}}</span>
+    </div>
+    <div id="card-items">
+        <span class="card-item-title">Ingredients</span>
+        <ul class="checkmark mt-3">
+            <li *ngFor="let ingredients of dataList?.ingredients, index as i">{{ingredients}}</li>
+        </ul>
+    </div>
+
+    <div id="method">
+        <span class="card-item-title">Method</span>
+        <ul class="checkmark mt-3" *ngFor="let instructions of dataList?.instructions, index as i">
+            <li>{{instructions}}</li>
+        </ul>
+    </div>
+
+    <div id="card-items">
+        <span class="card-item-title">Meal Type</span>
+        <ul class="checkmark mt-3">
+            <li *ngFor="let mealType of dataList?.mealType, index as i">{{mealType}}</li>
+        </ul>
+    </div>
+
+    <div id="card-items">
+        <span class="card-item-title">Tags</span>
+        <ul class="checkmark mt-3">
+            <li *ngFor="let tags of dataList?.tags, index as i">{{tags}}</li>
+        </ul>
+    </div                 >
+</div>
